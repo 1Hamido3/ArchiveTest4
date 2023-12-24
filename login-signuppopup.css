@@ -1,0 +1,357 @@
+
+@media screen and (max-width:1080px)
+
+{
+
+    h4,.popclose,#username,#email,#password,.usernamebox,.emailbox,.passwordbox,.loginbutton
+
+    {
+
+        width: 100%;
+
+    }
+
+}
+
+@keyframes transition
+
+{
+
+    from {opacity: 0;}
+    to   {opacity: 100%;}
+
+}
+
+@keyframes detransition
+
+{
+
+    from {opacity: 100%;}
+    to   {opacity: 0;}
+
+}
+
+@keyframes cloop 
+
+{
+
+    0%  {color: cyan;}
+    70% {color: azure;}
+
+}
+
+
+.loginpopup
+
+{
+
+    width: max-content;
+    height: max-content;
+    border: 4px dotted violet;
+    background-color: black;
+    display: flex;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: 0;
+    transform:translate(-50%,-50%);
+    justify-content: center;
+    z-index: 5;
+    opacity: 0;
+    display: none;
+
+}
+
+
+.loginpopup:target
+
+{
+
+    display: flex;
+    animation: transition;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+
+.loginpopup:target .popclose
+
+{
+
+    display: flex;
+
+}
+
+.signuppopup
+
+{
+
+    width: max-content;
+    height: max-content;
+    border: 4px dotted violet;
+    background-color: black;
+    display: flex;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: 0;
+    transform:translate(-50%,-50%);
+    justify-content: center;
+    z-index: 5;
+    display: none;
+
+}
+
+.signuppopup:target
+
+{
+
+    display: flex;
+    animation: transition;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+
+form
+
+{
+
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: inline;
+    position: relative;
+    padding: 3rem;
+
+}
+
+
+
+h4
+
+{
+
+    color: aqua;
+    font-size: 4rem;
+    padding: 1rem;
+    margin: 10px;
+    font-family: "press Start 2P";
+
+    animation: cloop 3s alternate infinite;
+
+}
+
+.popclose
+
+{
+
+    font-family: "press Start 2P";
+    font-size: 2rem;
+    margin: 0;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    color:cyan;
+
+}
+
+.popclose:active
+
+{
+
+    color: red;
+
+}
+
+#username
+
+{
+
+    color: red;
+    font-size: 2.5rem;
+    margin: 0.8rem;
+    margin-left: 30px;
+    font-family: arial;
+    font-weight: bold;
+
+}
+
+#password
+
+{
+
+    color: red;
+    font-size: 2.5rem;
+    margin: 0.8rem;
+    margin-left: 30px;
+    font-family: arial;
+    font-weight: bold;
+
+}
+
+#email
+
+{
+
+    color: red;
+    font-size: 2.5rem;
+    margin: 0.8rem;
+    margin-left: 30px;
+    font-family: arial;
+    font-weight: bold;
+
+}
+
+.usernamebox,.passwordbox,.emailbox
+
+{
+
+    border: 2px dotted violet;
+    background-color: rgb(112, 112, 112);
+    margin-left: 2rem;
+    width: 25rem;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+
+}
+
+
+
+.usernamebox:focus,.passwordbox:focus,.emailbox:focus
+
+{
+
+    border: red dotted 2.5px;
+    outline:none;
+    background-color: lightcoral;
+    color: red;
+}
+
+.usernamebox:hover,.passwordbox:hover,.emailbox:hover
+
+{
+
+    background-color: lightcoral;
+
+}
+
+.usernamebox::placeholder,.passwordbox::placeholder,.emailbox::placeholder
+
+{
+
+    color: cyan;
+    font-size: 1rem;
+    padding-left: 10px;
+
+}
+
+.usernamebox:focus,.passwordbox:focus,.emailbox:focus
+
+{
+
+    font-size: 1.5rem;
+
+}
+
+
+
+.loginbutton
+
+{
+
+    background-color: black;
+    color: cyan;
+    border: 2px dotted rebeccapurple;
+    font-size: 1.2rem;
+    width: 8rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-family: "press Start 2P";
+
+}
+
+.loginbutton:hover
+
+{
+
+    background-color: lightcoral;
+    cursor: pointer;
+
+}
+
+.loginbutton:active
+
+{
+
+    color: red;
+    background: cyan;
+    border: 2px solid red;
+
+}
+
+.signupbutton
+
+{
+
+    background-color: black;
+    color: cyan;
+    border: 2px dotted rebeccapurple;
+    font-size: 1.2rem;
+    width: 10.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-family: "press Start 2P";
+
+}
+
+.signupbutton:hover
+
+{
+
+    background-color: lightcoral;
+    cursor: pointer;
+
+}
+
+.signupbutton:active
+
+{
+
+    color: red;
+    background: cyan;
+    border: 2px solid red;
+
+}
+
+.signupalt,.loginalt
+
+{
+
+    color: aquamarine;
+    border: 1px cyan dotted;
+    margin-top: 1rem;
+    justify-content: center;
+
+}
+
+
+#tip1
+
+{
+
+    color: aquamarine;
+    font-size: 1.3rem;
+    font-family: "press Start 2P";
+    margin-top: 2rem;
+    margin-bottom: 0;
+    text-align: center;
+}

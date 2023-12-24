@@ -1,0 +1,2585 @@
+body
+
+{
+
+    margin: 0;
+    background-color: black;
+    
+}
+
+
+.sbg
+
+{
+
+    margin: 0px;
+    display: inline-flex;
+    position: fixed;
+    z-index: -1;
+    overflow:hidden;
+    max-width: 7120px;
+
+    animation: sOpacity;
+    animation-duration: 3s;
+
+}
+
+
+.sbg::-webkit-scrollbar
+
+{
+
+    display: none;
+
+}
+
+
+@keyframes sroll 
+
+    {
+    
+        0%
+
+        {
+
+            transform: translateX(0%);
+           
+
+        }
+
+        100%
+
+        {
+
+            transform: translateX(-200%);
+            
+        }
+
+    }
+
+    
+@keyframes sOpacity
+
+{
+
+    from
+
+    {
+
+        opacity: 0%;
+       
+
+    }
+
+    to
+
+    {
+
+        opacity: 100%;
+        
+    }
+
+}
+
+
+#s
+
+{
+
+    animation: sroll;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    height: auto;
+    max-width: 7120px;
+    object-fit:cover;
+
+}
+
+
+@media all and (max-width:7120px)
+
+{
+
+    #s
+
+    {
+
+        width: 100%;
+
+    }
+
+}
+
+
+@media screen and (max-width:1080px)
+
+{
+    #s
+    {
+
+        height:30vw;
+
+    }
+
+    #s::-webkit-scrollbar{display: none;}
+}
+
+
+.ctl
+
+{
+
+    z-index: 0;
+    display: flex;
+    margin-left: -50vw;
+    margin-top: -50vw;
+    animation: ctlslidein 1.5s ease-in-out forwards; 
+
+}
+
+
+@media screen and (max-width:1080px) {.ctl{width:150vw; position: fixed;}}
+@media screen and (max-width:1080px) {.ctl2{width:150vw; position: fixed;}}
+
+
+@keyframes ctlslidein{from { margin-left: -50vw; margin-top: -50vw;} to {margin-left:0vw; margin-top: 0vw;}}
+
+
+#lb1,#lb2,#lb3,#lb4
+
+{
+
+    position: absolute;
+    max-width: 1920px;
+    z-index: -1; 
+
+}
+
+
+#lb1
+
+{
+
+    animation: lbop1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 10s;
+
+}
+
+
+#lb2
+
+{
+
+    animation: lbop2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 6s;
+    opacity: 0;
+
+}
+
+
+#lb3
+
+{
+
+    animation: lbop3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 4s;
+    opacity: 0;
+
+}
+
+
+#lb4
+
+{
+
+    animation: lbop4;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1s;
+    opacity: 0;
+
+}
+
+
+@keyframes lbop1
+
+{
+
+    from    {opacity:30%;}
+    to      {opacity:100%;}
+
+}
+
+
+@keyframes lbop2
+
+{
+
+    from    {opacity:00%;}
+    to      {opacity:100%;}
+
+}
+
+
+@keyframes lbop3
+
+{
+
+    from    {opacity:00%;}
+    to      {opacity:100%;}
+
+}
+
+
+@keyframes lbop4 
+
+{
+
+    from    {opacity:00%;}
+    to      {opacity:100%;}
+    
+}
+
+
+@media all and (max-width:1920px)
+
+{
+
+    #lb1,#lb2,#lb3,#lb4
+
+    {
+
+        width: 22.5%;
+
+    }
+
+}
+
+
+.ctl2
+
+{
+
+    display: flex;
+    margin-top: 6px;
+    margin-left: -3px;
+    opacity: 0%;
+    animation: ctl2fade 1s 1.5s linear forwards;
+
+}
+
+
+@keyframes ctl2fade
+
+{from {opacity: 0%;} to {opacity: 100%;}}
+
+
+.ctl2:hover
+
+{
+
+    cursor: grab;
+
+}
+
+
+.ctl2:active
+
+{
+
+    cursor: not-allowed;
+
+}
+
+
+#tll1,#tll2
+
+{
+
+    max-width: 1920px;
+    position: absolute;
+
+}
+
+
+#tll1
+
+{
+
+    animation: tllfloat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+
+}
+
+
+@keyframes tllfloat
+
+{
+
+    0%        {margin-top: 0%; margin-left: 0%;}
+    100%      {margin-top: 0.3%; margin-left: 0.3%;}
+
+}
+
+
+
+@media all and (max-width: 1920px)
+
+{
+
+    #tll1,#tll2
+    {
+
+        width: 16%;
+
+    }
+
+}
+
+
+.spriter
+
+{
+
+    position: absolute;
+    margin-top: 1%;
+
+}
+
+
+#r
+
+{
+
+    display: flex;
+    margin-left: 30%;   
+    max-width: 7120px;
+    object-fit: contain;
+    position: fixed;
+    animation: r ease-out 5s 1s, r2 4s linear 6s ;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin-top: 7.5%;
+    visibility: hidden;
+
+}
+
+
+@media screen and (max-width:1080px)
+
+{
+
+    #r
+
+    {
+
+        margin-top: 11vw;
+            
+        animation: r1080 cubic-bezier( 0.30, 0.50, 0.30, 0.95 ) 5s 1s,r21080 4s linear 6s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;    
+        visibility: hidden;
+
+
+    }
+
+    
+    @keyframes r21080
+
+    {
+    
+        from
+            {
+    
+                margin-left:28vw;
+                margin-top: 11vw;
+    
+            }
+    
+        to 
+        
+            {
+    
+                margin-left:28vw;
+                margin-top: 13vw;
+    
+            }
+    
+    
+    }
+    
+    @keyframes r1080
+    
+    {
+    
+        0%
+            {
+    
+                margin-left:100%;
+                visibility: hidden;
+    
+            }
+    
+        100% 
+        
+            {
+    
+                margin-left:28vw;
+                visibility: visible;
+    
+            }
+    
+    }
+    
+
+}
+
+@media screen and (max-width:480px)
+
+{
+
+    #r
+
+    {
+
+        margin-top: 7vw;
+            
+        animation: r1080 cubic-bezier( 0.30, 0.50, 0.30, 0.95 ) 5s 1s,r21080 4s linear 6s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;    
+        visibility: hidden;
+
+
+    }
+
+    
+    @keyframes r21080
+
+    {
+    
+        from
+            {
+    
+                margin-left:28vw;
+                margin-top: 7vw;
+    
+            }
+    
+        to 
+        
+            {
+    
+                margin-left:28vw;
+                margin-top: 10vw;
+    
+            }
+    
+    
+    }
+    
+    @keyframes r1080
+    
+    {
+    
+        0%
+            {
+    
+                margin-left:100%;
+                visibility: hidden;
+    
+            }
+    
+        100% 
+        
+            {
+    
+                margin-left:28vw;
+                visibility: visible;
+    
+            }
+    
+    }
+    
+
+}
+
+@media screen and (min-width:1920px)
+
+{
+
+    #r
+
+    {
+
+        margin-top: 7.5%;    
+        animation: r1920 cubic-bezier( 0.2, 0.40, 0.60, 0.90 ) 5s 1s,r21920 4s linear 6s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;    
+        visibility: hidden;
+
+
+    }
+
+    
+@keyframes r21920
+
+    {
+    
+        from
+            {
+    
+                margin-left:22%;
+                margin-top: 7.5%;
+    
+            }
+    
+        to 
+        
+            {
+    
+                margin-left:22%;
+                margin-top: 2.000%;
+    
+            }
+    
+    
+    }
+    
+@keyframes r1920
+    
+    {
+    
+        0%
+            {
+    
+                margin-left:100%;
+                visibility: hidden;
+    
+            }
+    
+        100% 
+        
+            {
+    
+                margin-left:22%;
+                visibility: visible;
+    
+            }
+    
+    }
+    
+
+}
+
+
+@media screen and (min-width:2560px)
+
+{
+
+    #r
+        {
+
+            margin-top: 5%;
+            
+            animation: r2560 cubic-bezier( 0.17, 0.40, 0.10, 0.40 ) 5s 1s,r22560 4s linear 6s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;    
+            visibility: hidden;
+
+        }
+
+        @keyframes r22560
+
+{
+
+    from
+        {
+
+            margin-left:22%;
+            margin-top: 5%;
+
+        }
+
+    to 
+    
+        {
+
+            margin-left:22%;
+            margin-top: 3.000%;
+
+        }
+
+
+}
+
+@keyframes r2560
+
+{
+
+    0%
+        {
+
+            margin-left:100%;
+            visibility: hidden;
+
+        }
+
+    100% 
+    
+        {
+
+            margin-left:22%;
+            visibility: visible;
+
+        }
+
+}
+
+}
+
+
+@media screen and (min-width:3840px)
+
+{
+
+    #r
+        {
+
+            margin-top: 4.5%;
+            animation: r3840  cubic-bezier( 0.36, 0.47, 0.65, 0.30 ) 5s 1s,r23840 5s linear 6s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;    
+            visibility: hidden;
+
+        }
+
+@keyframes r23840
+
+{
+
+    from
+        {
+
+            margin-left:22%;
+            margin-top: 4.5%;
+
+        }
+
+    to 
+    
+        {
+
+            margin-left:22%;
+            margin-top: 1.000%;
+
+        }
+
+
+}
+
+
+@keyframes r3840
+
+{
+
+    0%
+        {
+
+            margin-left:100%;
+            visibility: hidden;
+
+        }
+
+    100% 
+    
+        {
+
+            margin-left:22%;
+            visibility: visible;
+
+        }
+
+}
+
+}
+
+
+@media all and (max-width:7120px)
+
+{
+
+    #r
+
+    {
+
+        width: 3%;
+
+    }
+
+}
+
+
+@keyframes r
+
+{
+
+    0%
+        {
+
+            margin-left:100%;
+            visibility: hidden;
+
+        }
+
+    100% 
+    
+        {
+
+            margin-left:22%;
+            visibility: visible;
+
+        }
+
+}
+
+
+@keyframes r2
+
+{
+
+    from
+        {
+
+            margin-left:22%;
+            margin-top: 7.5%;
+
+        }
+
+    to 
+    
+        {
+
+            margin-left:22%;
+            margin-top: 4.000%;
+
+        }
+
+
+}
+
+
+.headertb
+
+{
+
+    float: right;
+    margin-top: 5%;
+    overflow: hidden;
+
+}
+
+
+.headertb::-webkit-scrollbar
+
+{
+
+    display: none;
+
+}
+
+
+#htb1
+
+{
+
+    max-width: 1920px;
+    width: 90%;
+    height: 400px;
+    object-fit: contain;
+    float: right;
+    overflow: hidden;
+
+}
+
+
+@media screen and (max-width:1080px)
+
+{
+
+    #htb1
+
+    {
+
+        margin-top: 5vw;
+
+    }
+
+}
+
+
+#htb1::-webkit-scrollbar
+
+{
+
+    display: none;
+
+}
+
+
+@media screen and (min-width:2560px)
+
+{
+
+    #htb1
+    {
+
+        margin-top: -4%;
+        transition: 0.3s;
+    }
+
+}
+
+
+@media screen and (min-width:3840px)
+
+{
+
+    #htb1
+    {
+
+        margin-top: -4.5%;
+        transition: 0.3s;
+    }
+
+}
+
+
+@media all and (max-width:1920px)
+
+{
+
+    #htb1
+
+    {
+
+        width: 82%;
+        height: 50%;
+        float: right;
+
+        animation: htb1slidein;
+        animation-duration: 2s;
+        
+    }
+
+}
+
+
+@keyframes htb1slidein
+
+{
+
+    from {margin-right: -100%;}
+    to   {margin-right: 0%;}
+
+}
+
+
+h3
+
+{
+
+    color: rgb(255, 255, 255);
+    margin-top: 0px;
+    max-width: 98vw;
+    font-family:'press Start 2P';
+    padding: 0.7vw;
+    background-image: linear-gradient(to right,rgb(103, 177, 199),rgba(0,0,0,0));
+    font-size: 2vw;   
+    margin-left: -300vw;
+    display: flex;
+    position: sticky;
+    animation: slideInleft;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    overflow: hidden;
+
+}
+
+h3::-webkit-scrollbar
+
+{
+
+    display: none;
+
+}
+
+@media screen and (min-width:100px) and (max-width:1080px)
+
+
+{
+
+    h3 
+
+    {
+
+      position: fixed;
+      top: 60vw;
+      width: 98vw;
+      font-size: 5vw;
+
+    }
+
+}
+
+@media screen and (min-width:1280px)
+
+{
+
+    h3 {top: 430px;
+    position: absolute;
+    font-size: 2vw;
+    transition: 0.3s;
+    width: 100%;}
+
+}
+
+@media screen and (min-width:1281px)
+
+{
+
+    h3 {top: 350px;
+    position: absolute;
+    font-size: 2vw;
+    transition: 0.3s;
+    width: 100%;}
+
+}
+
+
+@media screen and (min-width:1920px)
+
+{
+
+    h3 {top: 485px;
+    position: absolute;
+    font-size: 1.5vw;
+    transition: 0.3s;
+    width: 100%;}
+
+}
+
+
+@keyframes slideInleft
+
+{
+
+
+    from
+    {
+
+        margin-left: -200%;
+
+    }    
+
+    to
+
+    {
+
+        margin-left: 0%;
+
+    }
+
+
+}
+
+
+h1
+
+{
+
+    position:absolute;
+    display: inline;
+    color: white;
+    font-size: 3vw;
+    font-family: "press Start 2P";
+    left: 40%;
+    margin-top: 9vw;
+
+
+    /*
+    animation: htfadeIn;
+    animation-duration: 2s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    */
+
+}
+
+@media screen and (max-width:1080px)
+
+{
+
+    h1
+
+    {
+
+        top: 5vw;
+        left: 37vw;
+        font-size: 3.2vw;
+
+    }
+
+}
+
+@media screen and (width:1080px)
+
+{
+
+    h1 
+
+    {
+
+        top: 4.8vw;
+        left: 37vw;
+        font-size: 3.2vw;
+
+    }
+
+}
+
+
+@media screen  and (min-width:2560px) {
+    
+    h1 {
+
+        font-size:2.5vw;
+        top: -2.5vw;
+        left: 45%;  
+        transition: 0.3s;      
+
+    }
+
+}
+
+
+@media screen  and (min-width:3840px) {
+    
+    h1 {
+
+        font-size:2vw;
+        top: -3.4vw;
+        left: 65%;        
+        transition: 0.3s;
+
+    }
+
+}
+
+
+h1 span:nth-child(1)
+
+{
+
+    margin-right: 0vw;
+    visibility: hidden;
+    animation: htfadeIn 0.5s 2s forwards;
+    animation-delay: 4s;
+
+}
+
+h1 span:nth-child(2)
+
+{
+
+    margin-right: -2vw;
+    visibility: hidden;
+    animation: htfadeIn 0.5s 2s forwards;
+    animation-delay: 3.6s;
+
+}
+
+
+h1 span:nth-child(3)
+
+{
+
+    margin-right: -2vw;
+    visibility: hidden;
+    animation: htfadeIn 0.5s 2s forwards;
+    animation-delay: 3.4s;
+    
+}
+
+
+h1 span:nth-child(4)
+
+{
+
+    margin-right: -2.3vw;
+    visibility: hidden;
+    animation: htfadeIn 0.5s 2s forwards;
+    animation-delay: 3.2s;
+
+}
+
+
+h1 span:nth-child(5)
+
+{
+
+    margin-right: -2vw;
+    visibility: hidden;
+    animation: htfadeIn 0.5s 2s forwards;
+    animation-delay: 3.0s;
+
+}
+
+
+h1 span:nth-child(6)
+
+{
+
+    margin-right: 0vw;
+    visibility: hidden;
+    animation: htfadeIn 0.5s 2s forwards;
+    animation-delay: 2.7s;
+
+}
+
+
+h1 span:nth-child(7)
+
+{
+
+    margin-right: -2vw;
+    visibility: hidden;
+    animation: htfadeIn 0.5s 2s forwards;
+    animation-delay: 2.5s;
+
+}
+
+
+h1 span:nth-child(8)
+
+{
+
+    margin-right: -2vw;
+    visibility: hidden;
+    animation: htfadeIn 0.5s 2s forwards;
+    animation-delay: 2.3s;
+
+}
+
+
+h1 span:nth-child(9)
+
+{
+
+    margin-right: -2vw;
+    visibility: hidden;
+    animation: htfadeIn 0.5s 2s forwards;
+    animation-delay: 2.1s;
+
+}
+
+
+h1 span:nth-child(10)
+
+{
+
+    margin-right: -2.3vw;
+    visibility: hidden;
+    animation: htfadeIn 0.5s 2s forwards;
+    animation-delay: 1.9s;
+
+}
+
+
+h1 span:nth-child(11)
+
+{
+
+    margin-right: -2vw;
+    visibility: hidden;
+    animation: htfadeIn 0.5s 2s forwards;
+    animation-delay: 1.7s;
+
+}
+
+
+h1 span:nth-child(12)
+
+{
+
+    margin-right: -2vw;
+    visibility: hidden;
+    animation: htfadeIn 0.5s 2s forwards;
+    animation-delay: 1.5s;
+
+}
+
+
+h1 span:nth-child(13)
+
+{
+
+    margin-right: 0.4vw;
+    visibility: hidden;
+    animation: htfadeIn 0.5s 2s forwards;
+    animation-delay: 1.4s;
+
+}
+
+
+h2
+
+{
+
+    position:absolute;
+    display: inline;
+    color: white;
+    font-size: 1.5vw;
+    font-family: "press Start 2P";
+    left: 25%;
+    margin-top: 17.3vw;
+
+    visibility: hidden;
+    animation: htfadeIn;
+    animation-duration: 4s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+
+}
+
+@media screen and (max-width:1080px)
+
+{
+
+    h2 
+
+    {
+
+        top: 5vw;
+
+    }
+
+}
+
+@media screen and (width:1080px)
+
+{
+
+    h2 
+
+    {
+
+        top: 4.6vw;
+
+    }
+
+}
+
+@media screen and (min-width:2560px)
+
+{
+
+    h2
+    {
+
+        margin-top: 12.8vw;
+        font-size: 1.2vw;
+        left: 40%;
+        transition: 0.3s;
+
+    }
+
+}
+
+
+@media screen and (min-width:3840px)
+
+{
+
+    h2
+    {
+
+        top: -2.6vw;
+        font-size: 0.83vw;
+        left: 59%;
+        transition: 0.3s;
+
+    }
+
+}
+
+
+@keyframes htfadeIn
+
+{
+
+    from
+    
+    {
+        opacity: 0%;
+        text-shadow: 0px 0px 0px black;
+        visibility: hidden;
+    }
+
+    to 
+
+    {
+
+        opacity: 100%;
+        text-shadow: 0px 10px 5px black;
+        visibility: visible;
+
+    }
+
+}
+
+
+.sbdiv
+
+{
+
+    position: fixed;
+    top: -80px;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    animation: dropIn 2s 4s forwards;
+
+}
+
+@media screen and (max-width:480px) 
+
+{
+    .sbdiv
+    
+    {
+
+        position: fixed;
+        top: -80px;
+        width: 100%;
+        display: flex;
+        justify-content:center;
+        animation: dropIn2 2s 4s forwards;
+
+    }
+
+    @keyframes dropIn2
+
+{
+
+    from
+    
+    {
+
+        top: -50px;
+        visibility: hidden;
+    }
+
+    to
+    
+    {
+        visibility: visible;
+        top: 10px;
+
+    }
+
+}
+
+
+}
+
+
+@keyframes dropIn
+
+{
+
+    from
+    
+    {
+
+        top: -50px;
+        visibility: hidden;
+    }
+
+    to
+    
+    {
+        visibility: visible;
+        top: 15px;
+
+    }
+
+}
+
+
+@media screen and (max-width:1080px) 
+
+{ 
+
+.sbdiv
+
+    {
+        width:100vw;
+        
+    }
+
+    @keyframes dropIn
+
+    {
+    
+        from
+        
+        {
+    
+            top: -50px;
+            visibility: hidden;
+        }
+    
+        to
+        
+        {
+            visibility: visible;
+            top: 30px;
+    
+        }
+    
+    }
+    
+}
+
+
+.searchbar
+
+{
+
+    display: flex;
+    text-align: center;
+    max-width: 100%;
+    width: 20vw;
+    padding: 1vw;
+    height: 2.6vw;
+    border: 1px dashed blueviolet;
+    border-right: 0px;
+    background-color: black;
+
+}
+
+
+@media screen and (max-width:1080px) { .searchbar{width: 25vw; height: 6vw;}}
+
+
+.searchbar:hover
+
+{
+
+    background-color: lightpink;
+
+}
+
+
+.searchbar::placeholder
+
+{
+
+    color: cyan;
+    font-family:"press Start 2P" ;
+    font-size: 0.6vw;
+    text-align: center;
+
+}
+
+
+@media screen and (max-width:1080px) 
+{
+
+    .searchbar::placeholder
+    
+    {
+
+        font-size: 0.74vw;
+    
+    }
+    
+}
+
+
+.searchbar:focus
+
+{
+    outline: none;
+    border-color: red;
+    color: red;
+    font-size: 1vw;
+    font-family:"press Start 2P" ;
+    background-color: rgb(252, 179, 179);
+    transition: 0.3s;
+
+}
+
+
+.searchbar:default
+
+{
+
+    background-color: cyan;
+
+}
+
+
+.searchbtn
+
+{
+
+    cursor: pointer;
+    max-width: 4vw;
+    padding: 3px;
+    height: 2.6vw;
+    padding: 0.2vw;
+    display: flex;
+
+    border: 1px;
+    border-left: 0px;
+    border-style: dashed;
+    border-color: blueviolet;
+    background-color: black;
+   
+}
+
+
+@media screen and (max-width:1080px) { .searchbtn{width: 25vw; height: 6vw;}}
+
+
+.searchbtn:hover
+
+{
+
+    background-color: rgb(252, 179, 179);
+
+}
+
+
+.searchbtnicon1
+
+{
+
+    width: 2vw;
+    height: 2vw;
+
+    animation: hidden;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;  
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    
+}
+
+
+.searchbtnicon2
+
+{
+
+    width: 2vw;
+    height: 2vw;
+    display: flex;
+    position: absolute;
+
+    animation: hidden;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;  
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    
+}
+
+
+@media screen and (max-width:1080px) { .searchbtnicon1,.searchbtnicon2{width: 4vw; height: 4vw; padding-top: 0.7vw; padding-left: -2vw;}}
+
+
+.searchbtnicon2:hover
+
+{
+
+    visibility: hidden;
+
+}
+
+
+@keyframes hidden
+
+    {
+
+        from 
+
+            {
+
+              transform: rotate(0deg);
+
+            }
+
+
+        to 
+        
+            {
+
+                transform: rotate(20deg);
+
+            }
+
+    }
+
+
+.lin-sup
+
+{
+
+    top: -15%;
+    height: 2.6vw;
+    display: flex;
+    float: right;
+    margin-right: 50px;
+    position: fixed;
+    left: 82%;
+
+    animation: dropIn;
+    animation-duration: 2s;
+    animation-delay: 4s;  
+    animation-fill-mode: forwards;
+
+}
+
+
+@media screen and (max-width:1080px) {.lin-sup{left: 70vw; height: 6vw;}}
+@media screen and (max-width:480px) 
+
+{
+    .lin-sup
+    
+    {
+     
+        top: -15%;
+        animation: dropIn2;
+        animation-duration: 2s;
+        animation-delay: 4s;  
+        animation-fill-mode: forwards;
+    
+    } 
+
+    @keyframes dropIn2
+
+    {
+    
+        from
+        
+        {
+    
+            top: -50px;
+            visibility: hidden;
+        }
+    
+        to
+        
+        {
+            visibility: visible;
+            top: 10px;
+    
+        }
+    
+    }
+
+}
+
+
+.cavepopup
+
+{
+
+    color: cyan;
+    width: max-content;
+    height: 0.4vw;
+    border-style: dotted;
+    border-color: blueviolet;
+    border-width:2px;
+    margin-right: 1vw;
+
+}
+
+@media screen and (max-width:1080px)
+
+{
+
+    .cavepopup 
+
+    {
+
+        height: 3.65vw;
+    
+    }
+
+}
+
+.lin
+
+{
+
+    color: cyan;
+    width: 5vw;
+    border-style: dotted;
+    border-color: blueviolet;
+    border-width:2px;
+
+}
+
+
+@media screen and (max-width:1080px)
+
+{
+
+    .lin
+    {
+
+        width: 10vw;
+
+    }
+
+}
+
+
+#under
+
+{
+
+    position: absolute;
+    left: 1vw;
+    right: 0px;
+    width: 2vw;
+    height: 2vw;
+    bottom: 0.3vw;
+    margin: 0px;
+
+    animation: moveIn;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+
+
+@media screen and (max-width:1080px) {#under{bottom:1vw; width: 4vw; height: 4vw; }}
+
+
+@keyframes moveIn
+
+{
+
+    from
+
+    {
+
+        left: 0.5vw;
+
+    }
+
+
+    
+    to
+    {
+
+        left: 1vw;
+
+    }
+
+}
+
+
+#over
+
+{
+
+    display: flex;
+    position: relative;
+    width: 2vw;
+    height: 2vw;
+    left: -0.3vw;
+    bottom: 0vw;
+
+}
+
+
+@media screen and (max-width:1080px) {#over{bottom:0vw; width: 4vw; height: 4vw; }}
+
+
+a:link
+
+{
+    
+    display: flex;
+    background-color: black;
+    padding: 1vw;
+    font-weight: bold;
+    box-shadow: 2px;
+    text-decoration: none;
+    font-size: 1vw;
+    align-items: center;
+    
+}
+
+@media screen and (max-width:1080px) {a:link{font-size: 1.5vw; }}
+
+
+a:hover, a:active 
+
+{
+    
+    background-color:lightpink;
+    color: cyan;
+
+}
+
+
+.sup 
+
+{
+
+    color: cyan;
+    width: 5.45vw;
+    border-style: dotted;
+    border-color: blueviolet;
+    border-width:2px;
+    position: relative;
+    left: 1vw;
+
+}
+
+@media screen and (max-width:1080px) {.sup{width: 10vw;}}
+
+
+.sbar 
+
+{
+
+    border: 2px dotted violet;
+    position: absolute;
+    width: 13vw;
+    height: 35%;
+    float: right;
+    right: 1.5vw;
+    top:29vw;
+
+    animation: FadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 3.5s;
+    animation-timing-function: linear;
+    opacity: 0%;
+
+    background: #51FFEE;
+    background: -webkit-linear-gradient(to top left, #51FFEE 0%, #000000 100%);
+    background: -moz-linear-gradient(to top left, #51FFEE 0%, #000000 100%);
+    background: linear-gradient(to top left, #51FFEE 0%, #000000 100%);
+
+}
+
+
+@media screen and (max-width:1080px)
+
+{
+    .sbar
+
+    {
+    
+    position: absolute;
+    width: 99%;
+    height: 20vw;
+    top: 35vw;
+    right: 0.3vw;
+    display: inline-flex;
+    
+    animation: FadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 3.5s;
+    animation-timing-function: linear;
+    opacity: 0%;
+    align-items: center;
+
+    }
+
+    @keyframes cloop
+
+    {
+
+        0% {color:aqua;}
+        50% {color: greenyellow;}
+
+    }
+
+    @keyframes FadeIn
+
+    {
+    
+        from {opacity: 0%;}
+        to {opacity: 100%;}
+    
+    }
+
+    #stext
+
+    {
+
+        padding: 2vw;
+        margin: 0;
+        position: absolute;
+        font-optical-sizing:auto;
+        font-family: "press Start 2P";
+        animation: FadeIn;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-delay: 4s;
+        opacity: 0%;
+        padding: 4vw;
+
+    }
+
+    #shtext 
+
+    {
+
+        animation: cloop;
+        animation-duration: 4s;
+        animation-fill-mode: alternate;
+        animation-iteration-count: infinite;
+        animation-delay: 4s;
+        margin-bottom: 2vw;
+
+    }
+
+}
+
+@media screen and (min-width:1280px)
+
+{
+    .sbar
+
+    {
+    
+    position: fixed;
+    width: 99%;
+    height: 10vw;
+    top: 22vw;
+    right: 0.4vw;
+    display: inline-flex;
+    
+    animation: FadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 3.5s;
+    animation-timing-function: linear;
+    opacity: 0%;
+    align-items: center;
+
+    }
+
+    @keyframes cloop
+
+    {
+
+        0% {color:aqua;}
+        50% {color: greenyellow;}
+
+    }
+
+    @keyframes FadeIn
+
+    {
+    
+        from {opacity: 0%;}
+        to {opacity: 100%;}
+    
+    }
+
+    #stext
+
+    {
+
+        padding: 2vw;
+        margin: 0;
+        position: absolute;
+        font-optical-sizing:auto;
+        font-family: "press Start 2P";
+        animation: FadeIn;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-delay: 4s;
+        opacity: 0%;
+        padding: 1.5vw;
+
+    }
+
+    #shtext 
+
+    {
+
+        animation: cloop;
+        animation-duration: 4s;
+        animation-fill-mode: alternate;
+        animation-iteration-count: infinite;
+        animation-delay: 4s;
+        margin-bottom: 1vw;
+
+    }
+
+}
+
+@media screen and (min-width:1281px)
+
+{
+    .sbar
+
+    {
+    
+        border: 2px dotted violet;
+        position: absolute;
+        width: 13.5vw;
+        height: 35%;
+        float: right;
+        right: 1.5vw;
+        top:29vw;
+
+
+        animation: FadeIn;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-delay: 3.5s;
+        animation-timing-function: linear;
+        opacity: 0%;
+    
+        background: #51FFEE;
+        background: -webkit-linear-gradient(to top left, #51FFEE 0%, #000000 100%);
+        background: -moz-linear-gradient(to top left, #51FFEE 0%, #000000 100%);
+        background: linear-gradient(to top left, #51FFEE 0%, #000000 100%);
+
+    }
+
+    @keyframes cloop
+
+    {
+
+        0% {color:aqua;}
+        50% {color: greenyellow;}
+
+    }
+
+    @keyframes FadeIn
+
+    {
+    
+        from {opacity: 0%;}
+        to {opacity: 100%;}
+    
+    }
+
+    #stext
+
+    {
+
+        text-align: center;
+        position:absolute;
+        color: white;
+        padding: 0.5vw;
+        animation: FadeIn;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-delay: 4s;
+        opacity: 0%;
+
+    }
+
+
+    #shtext 
+
+    {
+
+        display: flex;
+        text-align: center;
+        padding-bottom: 1vw;
+        padding-left: 0.5vw;
+        color: aqua;
+        text-decoration: underline;
+        animation: cloop;
+        animation-duration: 4s;
+        animation-fill-mode: alternate;
+        animation-iteration-count: infinite;
+        animation-delay: 4s;
+
+    }
+
+}
+
+@media screen and (min-width:2560px)
+
+{
+    .sbar
+
+    {
+    
+        border: 2px dotted violet;
+        position: absolute;
+        width: 13.5vw;
+        height: 10vw;
+        float: right;
+        right: 1.5vw;
+        top:25vw;
+
+
+        animation: FadeIn;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-delay: 3.5s;
+        animation-timing-function: linear;
+        opacity: 0%;
+    
+        background: #51FFEE;
+        background: -webkit-linear-gradient(to top left, #51FFEE 0%, #000000 100%);
+        background: -moz-linear-gradient(to top left, #51FFEE 0%, #000000 100%);
+        background: linear-gradient(to top left, #51FFEE 0%, #000000 100%);
+
+    }
+
+    @keyframes cloop
+
+    {
+
+        0% {color:aqua;}
+        50% {color: greenyellow;}
+
+    }
+
+    @keyframes FadeIn
+
+    {
+    
+        from {opacity: 0%;}
+        to {opacity: 100%;}
+    
+    }
+
+    #stext
+
+    {
+
+        text-align: center;
+        position:absolute;
+        color: white;
+        padding: 0.5vw;
+        animation: FadeIn;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-delay: 4s;
+        opacity: 0%;
+
+    }
+
+
+    #shtext 
+
+    {
+
+        display: flex;
+        text-align: center;
+        padding-bottom: 1vw;
+        padding-left: 0.5vw;
+        color: aqua;
+        text-decoration: underline;
+        animation: cloop;
+        animation-duration: 4s;
+        animation-fill-mode: alternate;
+        animation-iteration-count: infinite;
+        animation-delay: 4s;
+
+    }
+
+}
+
+
+#stext 
+
+{
+
+    text-align: center;
+    position:absolute;
+    color: white;
+    font-size: 1rem;
+    animation: FadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+    opacity: 0%;
+    align-self: start;
+
+}
+
+
+#shtext
+
+{
+
+    display: flex;
+    text-align: center;
+    padding-bottom: 1vw;
+    color: aqua;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    padding-top: 0.5vw;
+
+    animation: cloop;
+    animation-duration: 4s;
+    animation-fill-mode: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+
+}
+
+
+@keyframes cloop
+
+{
+
+    0% {color:aqua;}
+    50% {color: greenyellow;}
+
+}
+
+
+@keyframes FadeIn
+
+{
+
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+
+}
+
+
+.containermain 
+
+{
+
+    width: 10vw;
+    height: 100%;
+    left: 2vw;
+    display: flex;
+    flex-direction: column;
+    top: 38vw;
+    position: fixed;
+    column-count: 1;
+    opacity: 0;
+    animation: FadeIn 2s 4s linear forwards ;
+
+}
+
+
+@media screen and (min-width:1080px) { .containermain { top: 38vw; width: 97.5%; left: 1%; } }
+@media screen and (min-width:1280px) { .containermain { top: 28vw; width: 97.9%; left: 1%; } }
+@media screen and (min-width:2560px) { .containermain { top: 22vw; width: 83%; left: 1%; } }
+@media screen and (min-width:3840px) { .containermain { top: 17vw; width: 83%; left: 1%; } }
+@media screen and (max-width:1080px) {.containermain{top: 70vw;}}
+
+
+.main
+
+{
+
+    display: inline-flex;
+    flex-direction: column;
+    overflow:scroll;
+    border: 0.2vw dotted violet;
+    height: 38vh;
+
+}
+
+
+@media screen and (min-width:2560px) {.main{height: 50vh;}}
+@media screen and (min-width:1280px) {.main{height: 30vh; margin-top: 10vw;}}
+@media screen and (min-width:1281px) {.main{margin-top: 0vw; width: 80vw; height: 40vh;}}
+
+@media screen and (min-width:3840px) {.main{height: 60vh;}}
+@media screen  and (max-width:1080px) {.main{width: 96vw; height: 55vh; margin-top: 0; }}
+
+
+.main::-webkit-scrollbar
+
+{
+
+    display: none;
+
+}
+
+
+.container
+
+{
+
+    width: 100%;
+    height: max-content;
+    margin: 1vw 1vw 0vw 1vw;
+    display: flex;
+    align-items: center;
+
+}
+
+
+@media screen and (max-width:1080px) {.container{width: 100%; height: 70vh; }}
+
+
+
+.container:hover
+
+{
+
+        animation: gradient steps(120);
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: alternate;
+        animation-timing-function: ease-in-out;
+
+}
+
+
+@keyframes gradient 
+
+{
+
+    0% {    
+        
+        background: blue ;
+        background: -webkit-radial-gradient(ellipse farthest-corner at center center, hsl(252, 100%, 41%) 0%, #000000 72%);
+        background: -moz-radial-gradient(ellipse farthest-corner at center center, hsl(252, 100%, 41%) 0%, #000000 72%);
+        background: radial-gradient(ellipse farthest-corner at center center, hsl(252, 100%, 41%) 0%, #000000 72%);
+    
+        }
+        
+
+    100% {
+
+            background: rgb(207, 0, 190) ;
+            background: -webkit-radial-gradient(ellipse farthest-corner at center center, hsl(313, 100%, 41%) 0%, #000000 72%);
+            background: -moz-radial-gradient(ellipse farthest-corner at center center, hsl(313, 100%, 41%) 0%, #000000 72%);
+            background: radial-gradient(ellipse farthest-corner at center center, hsl(313, 100%, 41%) 0%, #000000 72%);
+
+         }    
+
+}
+
+
+.ctgimg 
+
+{
+
+    width: 12vw;
+    height: 12vw;
+    max-width: 15vw;
+    max-height: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+
+}
+
+@media screen and (max-width:1080px) {.ctgimg{width: 15vw; }}
+
+
+#ctgimg1
+
+{
+
+    width: 10vw;
+    position: absolute;
+
+}
+
+
+@media screen and (max-width:1080px) {#ctgimg1{width: 100%; left: 3vw; }}
+
+
+
+#ctgimg2
+
+{
+
+  
+    width: 10vw;
+    position: absolute;
+    animation: iconfade 3s infinite alternate;
+
+}
+
+
+@media screen and (max-width:1080px) {#ctgimg2{width: 100%; left: 3vw; }}
+
+
+
+#ctgimg3
+
+{
+
+  
+    width: 10vw;
+    position: absolute;
+    animation: iconfade 4s infinite alternate;
+    
+
+}
+
+
+@media screen and (max-width:1080px) {#ctgimg3{width: 100%; left: 3vw; }}
+
+
+
+@keyframes iconfade
+
+{
+
+    0%
+    {
+
+        opacity: 100%;
+
+    }
+
+    100% 
+    {
+
+       opacity: 0%; 
+
+    }
+
+}
+
+
+.ctgabt
+
+{
+
+    color: aqua;
+    margin-left: 2vw;
+    border-top: 0.15vw white dotted;
+    border-bottom: 0.15vw white dotted;
+    position: relative;
+
+}
+
+
+@media screen and (max-width:1080px) {.ctgabt{ left: 13vw; }}
+
+
+
+#p1
+
+{
+
+    font-size: 1vw;
+    color: coral;
+    font-size: arial;
+
+}
+
+
+@media screen and (max-width:1080px) {#p1{font-size:2vw; }}
+
+
+#ctghead
+
+{
+
+    font-size: 2vw;
+    color: aliceblue;
+    font-family: arial;
+    font-weight: bold;
+
+}
+
+
+@media screen and (max-width:1080px) {#ctghead{font-size:3vw; }}
+
+
+#browse
+
+{
+
+    cursor: pointer;
+    font-size: 3vw;
+    background-color: transparent;
+    color: cyan;
+    text-shadow: 0px 1px 1px white;
+
+}
+
+
+@media screen and (max-width:1080px) {.brwse{left:-3vw;top:-3vw;}}
+
+
+.brwse 
+
+{
+
+    margin-left: 18vw;
+    position: relative;
+
+}
+
+
+#browsearrow
+
+{
+
+    animation: arwmove 2s alternate infinite;
+    position: absolute;
+    margin-left: -8vw;
+    width: 6vw;
+
+}
+
+
+@keyframes arwmove
+
+{
+
+    from {margin-left: -8vw;}
+    to   {margin-left:-3vw}
+
+}
+
+
+#cavepopup
+
+{
+
+    z-index: 5;
+
+}
